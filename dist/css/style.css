@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Helvetica Neue;
+    src: url(../font/helvetica-neue.ttf);
+}
+
+body{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.btn-link-menu{
+    font-size: 14px;
+    color: #888888;
+    text-align: center;
+    padding: 12px 31px;
+}
+
+#header{
+    height: 319px;
+    background: #707070 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    font-family: Helvetica Neue;
+    color: #ffffff;
+}
+#header .description{
+    margin-top: 69px;
+    font-size: 20px;
+    letter-spacing: 0px;
+}
+#header .title{
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 0px;
+}
+#header .sub-description{
+    font-size: 14px;
+    margin-top: 24px;
+}
+#header .menu-list ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+#header .menu-list ul li{
+    padding: 0 47px;
+}
+#header .menu-list ul li button{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 4px;
+}
