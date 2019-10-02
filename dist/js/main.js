@@ -40,7 +40,40 @@ $(document).ready(function(){
         console.log('seila: '+url);
         carregarProdutos(url);
     });
+
+    $("#input-email").on('change', function(){
+        validacaoEmail($("#input-email").val());
+    });
+
+    $("#enviar-newletter").on('click', function(){
+        validacaoEmail($("#input-email").val());
+        return false;
+    });
 });
+
+function validacaoEmail(field) {
+    usuario = field.substring(0, field.indexOf("@"));
+    dominio = field.substring(field.indexOf("@")+ 1, field.length);
+     
+    if ((usuario.length >=1) &&
+        (dominio.length >=3) && 
+        (usuario.search("@")==-1) && 
+        (dominio.search("@")==-1) &&
+        (usuario.search(" ")==-1) && 
+        (dominio.search(" ")==-1) &&
+        (dominio.search(".")!=-1) &&      
+        (dominio.indexOf(".") >=1)&& 
+        (dominio.lastIndexOf(".") < dominio.length - 1)) {
+        //document.getElementById("msgemail").innerHTML="E-mail válido";
+        $("#msgemail").html("");
+        $("#enviar-newletter").removeAttr('disabled');
+    }
+    else{
+        $("#msgemail").html("<font color='red'>E-mail inválido </font>");
+        $("#enviar-newletter").attr('disabled', 'disabled');
+        //alert("E-mail invalido");
+    }
+}
 
 function formatNumber(value) {
     value = convertToFloatNumber(value);
