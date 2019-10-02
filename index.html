@@ -7,6 +7,9 @@
     <meta name="author" content="Willian Maikon da Silva">
     <title>Teste Frontend Linx</title>
     <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/css/responsive.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="dist/js/main.js"></script>
 </head>
 <body>
     <section id="header">
@@ -22,86 +25,64 @@
         <div class="menu-list">
             <ul>
                 <li>
-                    <button class="btn-link-menu">Conheça a Linx</button>
+                    <button class="btn btn-link-menu text-gray">Conheça a Linx</button>
                 </li>
                 <li>
-                    <button class="btn-link-menu">Ajude o algorítimo</button>
+                    <button class="btn btn-link-menu text-gray">Ajude o algorítimo</button>
                 </li>
                 <li>
-                    <button class="btn-link-menu">Seus produtos</button>
+                    <button class="btn btn-link-menu text-gray">Seus produtos</button>
                 </li>
                 <li>
-                    <button class="btn-link-menu">Compartilhe</button>
+                    <button class="btn btn-link-menu text-gray">Compartilhe</button>
                 </li>
             </ul>
         </div>
     </section>
     <section id="body-container">
         <div class="container">
-            <div class="title-container">
+            <div class="title-container text-gray">
                 <p>Sua seleção especial</p>
             </div>
             <div class="cards">
-                <div class="card">
-                    <img src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjqzYSQ8_nkAhUhIbkGHYseCi8QjRx6BAgBEAQ&url=https%3A%2F%2Fbr.freepik.com%2Ffotos-vetores-gratis%2Fimagem&psig=AOvVaw0nryxsCKwTILK0MXbTCYdW&ust=1569979388943324" alt="imagem" />
-                    <div class="title">
-                        <h4>Nome do Produto</h4>
-                    </div>
-                    <div class="description">
-                        <p>
-                            Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.
-                        </p>
-                    </div>
-                    <div class="price">
-                        <p class="price-before">
-
-                        </p>
-                        <p class="price-after">
-
-                        </p>
-                        <p class="price-portion">
-
-                        </p>
-                    </div>
-                    <div class="footer-card">
-                        <button class="btn-comprar"></button>
-                    </div>
-                </div>
+                
             </div>
-            <div class="footer">
-                <button class="btn-footer-product">Ainda mais produtos aqui!</button>
+            <div class="footer text-center">
+                <button id="add-product-plus" class="btn btn-footer-product text-gray">Ainda mais produtos aqui!</button>
             </div>
         </div>
     </section>
     <section id="share-friends">
-        <div class="title">
+        <div class="title text-center text-gray">
             <h2>Compartilhe a novidade</h2>
         </div>
-        <div class="description">
+        <div class="description text-center text-gray">
             <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
         </div>
         <div class="form-share">
             <form action="">
-                <div class="form">
-                    <label for="">
-                        Nome do seu amigo:
-                    </label>
-                    <input type="text" class="input-share" />
+                <div class="form-group">
+                    <div class="form">
+                        <label class="text-gray" for="">
+                            Nome do seu amigo:
+                            <input type="text" class="input-share text-gray" />
+                        </label>
+                    </div>
+                    <div class="form">
+                        <label class="text-gray" for="">
+                            E-mail:
+                            <input type="text" class="input-share text-gray" />
+                        </label>
+                    </div>
                 </div>
-                <div class="form">
-                    <label for="">
-                        E-mail:
-                    </label>
-                    <input type="text" class="input-share" />
-                </div>
-                <div class="share-button">
-                    <button class="btn-share">Enviar Agora</button>
+                <div class="share-button text-center">
+                    <button class="btn-share btn text-gray">Enviar Agora</button>
                 </div>
             </form>
         </div>
     </section>
     <section id="footer">
-        <div class="description">
+        <div class="description text-center">
             <p>Testando suas habilidades em HTML, CSS e JS.</p>
             <p>Linx Impulse</p>
             <p>2019</p>

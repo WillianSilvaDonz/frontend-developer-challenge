@@ -1,0 +1,50 @@
+@media only screen and (max-width: 1200px) {
+    #body-container .cards{
+        padding: 0 180px;
+    }
+    #header .menu-list ul li {
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #body-container .cards{
+        padding: 0 100px;
+    }
+
+    #header .menu-list ul li {
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #body-container .cards{
+        padding: 0 20px;
+    }
+
+    #share-friends .form-share .form-group .form:nth-child(2){
+        margin-left:0px;
+    }
+
+    #header .menu-list ul li {
+        padding: 0 5px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #header .menu-list ul {
+        margin-top: 20px;
+    }
+    #body-container .cards{
+        padding: 0 0px;
+    }
+
+    #body-container .card {
+        min-width: 400px;
+        text-align: center;
+    }
+
+    #header .menu-list ul li {
+        padding: 0 0px;
+    }
+}

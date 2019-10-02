@@ -6,24 +6,36 @@
 body{
     margin: 0 auto;
     padding: 0 auto;
+    font-family: Helvetica Neue;
 }
 
 .text-center{
     text-align: center;
 }
 
+.text-left{
+    text-align: left;
+}
+
+.btn{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 4px;
+}
+
+.text-gray{
+    color: #888888;
+}
+
 .btn-link-menu{
     font-size: 14px;
-    color: #888888;
     text-align: center;
-    padding: 12px 31px;
 }
 
 #header{
     height: 319px;
     background: #707070 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
-    font-family: Helvetica Neue;
     color: #ffffff;
 }
 #header .description{
@@ -54,8 +66,139 @@ body{
     padding: 0 47px;
 }
 #header .menu-list ul li button{
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 1px 6px #00000029;
-    border: 1px solid #707070;
     border-radius: 4px;
+    width: 160px;
+    height: 40px;
+}
+
+#body-container .title-container{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 48px;
+    font-weight: bold;
+}
+
+#body-container .cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 271px;
+    margin-top: 11px;
+}
+#body-container .card{
+    max-width: 201px;
+    padding: 39px 20px 0 20px;
+    flex: 1;
+    text-align: left;
+}
+#body-container .card .title{
+    font-size: 14px;
+}
+
+#body-container .card .description{
+    font-size: 12px;
+    height: 60px;
+}
+
+#body-container .card .description p{
+    padding: 0px;
+    margin: 0px;
+}
+
+#body-container .card .btn-comprar{
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+#body-container .footer{
+    margin-top: 53px;
+}
+
+#body-container .btn-footer-product{
+
+    font-size: 16px;
+    width: 260px;
+    height: 39px;
+}
+
+#body-container .price-before{
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+}
+#body-container .price-after{
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#body-container .price-portion{
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+}
+
+#share-friends{
+    margin-top: 164px;
+}
+
+#share-friends .title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#share-friends .description{
+    font-weight: 14px;
+}
+
+#share-friends .form-share .form-group{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#share-friends .form-share .form-group .form label{
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+#share-friends .form-share .form-group .form:nth-child(2){
+    margin-left: 40px;
+}
+
+#share-friends .form-share .form-group .form .input-share{
+    display: block;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    width: 340px;
+    height: 30px;
+    font-size: 16px;
+}
+
+#share-friends .form-share .form-group .form .input-share:focus{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+}
+
+#share-friends .share-button{
+    margin-top: 50px;
+}
+#share-friends .share-button .btn-share{
+    font-size: 16px;
+    width: 260px;
+    height: 39px;
+}
+
+#footer{
+    margin-top: 142px;
+    height: 186px;
+    background: #707070 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+}
+#footer .description{
+    font-size: 12px;
+    color: #ffffff;
+    margin-top: 64px;
 }
